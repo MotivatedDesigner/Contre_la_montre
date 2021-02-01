@@ -1,4 +1,8 @@
 
+/*importing fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /*Declaration des variables*/
 :root {
 
@@ -17,7 +21,7 @@
 
 /*Selecteur HTML : starter font size : 10px */
 html {
-    font-size: 10px;
+    font-size: 50%;
     font-weight: 400;
 }
 
@@ -32,3 +36,59 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-size: 6rem;
+    line-height: 9rem;
+}
+
+h3{
+    font-size: 3.75rem;
+    line-height: 5.6rem;
+    color: var(--color-silver-bg-dark);
+}
+
+p{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.sign-in{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.account-left{
+    width: 70%;
+    color: white;
+    background: url("../img/bg2.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.account-left::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-green);
+    clip-path: polygon(0 0, 100% 0, 9% 100%, 0% 100%);
+    opacity: .6;
+}
+
+.account-text{
+    position: absolute;
+    z-index: 2;
+    padding: 17.5rem 21.25rem;
+    width: 80%;
+}
+
+
